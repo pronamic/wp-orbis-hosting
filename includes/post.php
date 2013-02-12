@@ -15,7 +15,7 @@ function orbis_hosting_create_initial_post_types() {
 			),
 			'public'        => true,
 			'menu_position' => 30,
-			'menu_icon'     => plugins_url( 'images/hosting_group.png', $orbis_hosting_plugin->file ),
+			'menu_icon'     => $orbis_hosting_plugin->plugin_url( 'images/hosting_group.png' ),
 			'supports'      => array( 'title', 'comments' ),
 			'has_archive'   => true,
 			'rewrite'       => array( 'slug' => 'hostinggroep' )
@@ -34,7 +34,7 @@ function orbis_hosting_create_initial_post_types() {
 			),
 			'public'        => true,
 			'menu_position' => 30,
-			'menu_icon'     => plugins_url( 'images/domain_name.png', $orbis_hosting_plugin->file ),
+			'menu_icon'     => $orbis_hosting_plugin->plugin_url( 'images/domain_name.png' ),
 			'supports'      => array( 'title', 'comments' ),
 			'has_archive'   => true,
 			'rewrite'       => array( 'slug' => 'domeinnamen' )
