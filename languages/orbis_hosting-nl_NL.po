@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Orbis Hosting\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 16:43+0100\n"
-"PO-Revision-Date: 2013-02-14 16:43+0100\n"
+"POT-Creation-Date: 2013-02-14 18:59+0100\n"
+"PO-Revision-Date: 2013-02-14 18:59+0100\n"
 "Last-Translator: Remco Tolsma <remco@pronamic.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "MIME-Version: 1.0\n"
@@ -36,6 +36,11 @@ msgstr "Nieuwe toevoegen"
 #: includes/post.php:14
 msgid "Add New Hosting Group"
 msgstr "Nieuwe hosting groep toevoegen"
+
+#: includes/post.php:21
+msgctxt "slug"
+msgid "hosting-groups"
+msgstr "hosting-groepen"
 
 #: includes/post.php:28
 #: includes/post.php:30
