@@ -18,7 +18,7 @@ License: GPL
 GitHub URI: https://github.com/pronamic/wp-orbis-hosting
 */
 
-function orbis_hosting_init() {
+function orbis_hosting_bootstrap() {
 	include 'classes/orbis-hosting-plugin.php';
 
 	global $orbis_hosting_plugin;
@@ -26,4 +26,4 @@ function orbis_hosting_init() {
 	$orbis_hosting_plugin = new Orbis_Hosting_Plugin( __FILE__ );
 }
 
-add_action( 'orbis_init', 'orbis_hosting_init' );
+add_action( 'orbis_bootstrap', 'orbis_hosting_bootstrap' );
