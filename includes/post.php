@@ -6,12 +6,12 @@ function orbis_hosting_create_initial_post_types() {
 	register_post_type(
 		'orbis_hosting_group',
 		array(
-			'label'         => __( 'Hosting Group', 'orbis' ),
+			'label'         => __( 'Hosting Group', 'orbis_hosting' ),
 				'labels'        => array(
-				'name'          => __( 'Hosting Groups', 'orbis' ),
-				'singular_name' => __( 'Hosting Group', 'orbis' ),
-				'add_new'       => _x( 'Add New', 'hosting_group', 'orbis' ),
-				'add_new_item'  => __( 'Add New Hosting Group', 'orbis' )
+				'name'          => __( 'Hosting Groups', 'orbis_hosting' ),
+				'singular_name' => __( 'Hosting Group', 'orbis_hosting' ),
+				'add_new'       => _x( 'Add New', 'hosting_group', 'orbis_hosting' ),
+				'add_new_item'  => __( 'Add New Hosting Group', 'orbis_hosting' )
 			),
 			'public'        => true,
 			'menu_position' => 30,
@@ -25,12 +25,12 @@ function orbis_hosting_create_initial_post_types() {
 	register_post_type(
 		'orbis_domain_name',
 		array(
-			'label'         => __( 'Domain Names', 'orbis' ),
+			'label'         => __( 'Domain Names', 'orbis_hosting' ),
 				'labels'        => array(
-				'name'          => __( 'Domain Names', 'orbis' ),
-				'singular_name' => __( 'Domain Name', 'orbis' ),
-				'add_new'       => _x( 'Add New', 'domain_name', 'orbis' ),
-				'add_new_item'  => __( 'Add New Domain Name', 'orbis' )
+				'name'          => __( 'Domain Names', 'orbis_hosting' ),
+				'singular_name' => __( 'Domain Name', 'orbis_hosting' ),
+				'add_new'       => _x( 'Add New', 'domain_name', 'orbis_hosting' ),
+				'add_new_item'  => __( 'Add New Domain Name', 'orbis_hosting' )
 			),
 			'public'        => true,
 			'menu_position' => 30,
