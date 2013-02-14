@@ -16,7 +16,7 @@ function orbis_hosting_create_initial_post_types() {
 			'public'        => true,
 			'menu_position' => 30,
 			'menu_icon'     => $orbis_hosting_plugin->plugin_url( 'admin/images/hosting_group.png' ),
-			'supports'      => array( 'title', 'comments' ),
+			'supports'      => array( 'title', 'editor', 'comments' ),
 			'has_archive'   => true,
 			'rewrite'       => array( 'slug' => _x( 'hosting-groups', 'slug', 'orbis_hosting' ) ) 
 		)
