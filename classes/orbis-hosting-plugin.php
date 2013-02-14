@@ -6,4 +6,8 @@ class Orbis_Hosting_Plugin extends Orbis_Plugin {
 
 		$this->plugin_include( 'includes/post.php' );
 	}
+
+	public function init() {
+		$this->load_textdomain( 'orbis_hosting', '/langauges/' );
+	}
 }
