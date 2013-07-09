@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Orbis Hosting\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 18:59+0100\n"
-"PO-Revision-Date: 2013-02-14 18:59+0100\n"
+"POT-Creation-Date: 2013-07-09 15:17+0100\n"
+"PO-Revision-Date: 2013-07-09 15:18+0100\n"
 "Last-Translator: Remco Tolsma <remco@pronamic.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "MIME-Version: 1.0\n"
@@ -18,6 +18,41 @@ msgstr ""
 "X-Poedit-Language: Dutch\n"
 "X-Poedit-Country: NETHERLANDS\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: admin/meta-box-hosting-group-details.php:16
+#: includes/hosting_group.php:77
+msgid "IP address"
+msgstr "IP-adres"
+
+#: admin/meta-box-hosting-group-details.php:24
+#: includes/hosting_group.php:78
+msgid "Hostname"
+msgstr "Hostnaam"
+
+#: admin/meta-box-hosting-group-details.php:32
+#: includes/hosting_group.php:79
+msgid "Hostname Provider"
+msgstr "Hostnaam leverancier"
+
+#: includes/hosting_group.php:9
+msgid "Hosting Group Details"
+msgstr "Hosting groep details"
+
+#: includes/hosting_group.php:76
+msgid "Title"
+msgstr "Titel"
+
+#: includes/hosting_group.php:80
+msgid "Author"
+msgstr "Auteur"
+
+#: includes/hosting_group.php:81
+msgid "Comments"
+msgstr "Reacties"
+
+#: includes/hosting_group.php:82
+msgid "Date"
+msgstr "Datum"
 
 #: includes/post.php:9
 #: includes/post.php:12
@@ -350,20 +385,8 @@ msgstr "Nieuwe domeinnaam"
 #~ msgid "Principal"
 #~ msgstr "Opdrachtgever"
 
-#~ msgid "Title"
-#~ msgstr "Titel"
-
 #~ msgid "Time"
 #~ msgstr "Tijd"
-
-#~ msgid "Author"
-#~ msgstr "Auteur"
-
-#~ msgid "Comments"
-#~ msgstr "Reacties"
-
-#~ msgid "Date"
-#~ msgstr "Datum"
 
 #~ msgid "FTP"
 #~ msgstr "FTP"
@@ -415,9 +438,6 @@ msgstr "Nieuwe domeinnaam"
 
 #~ msgid "URL"
 #~ msgstr "URL"
-
-#~ msgid "Username"
-#~ msgstr "Gebruikersnaam"
 
 #~ msgid "Password"
 #~ msgstr "Wachtwoord"

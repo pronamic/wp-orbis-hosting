@@ -5,6 +5,7 @@ class Orbis_Hosting_Plugin extends Orbis_Plugin {
 		parent::__construct( $file );
 
 		$this->plugin_include( 'includes/post.php' );
+		$this->plugin_include( 'includes/hosting_group.php' );
 	}
 
 	public function loaded() {
