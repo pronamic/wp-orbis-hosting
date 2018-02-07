@@ -36,3 +36,11 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Composer #
+############
+/vendor/
+
+# NodeJS #
+##########
+/node_modules/
