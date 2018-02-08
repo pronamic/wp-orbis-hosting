@@ -20,37 +20,37 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: admin/meta-box-hosting-group-details.php:16
-#: includes/hosting_group.php:77
+#: includes/hosting-group.php:77
 msgid "IP address"
 msgstr "IP-adres"
 
 #: admin/meta-box-hosting-group-details.php:24
-#: includes/hosting_group.php:78
+#: includes/hosting-group.php:78
 msgid "Hostname"
 msgstr "Hostnaam"
 
 #: admin/meta-box-hosting-group-details.php:32
-#: includes/hosting_group.php:79
+#: includes/hosting-group.php:79
 msgid "Hostname Provider"
 msgstr "Hostnaam leverancier"
 
-#: includes/hosting_group.php:9
+#: includes/hosting-group.php:9
 msgid "Hosting Group Details"
 msgstr "Hosting groep details"
 
-#: includes/hosting_group.php:76
+#: includes/hosting-group.php:76
 msgid "Title"
 msgstr "Titel"
 
-#: includes/hosting_group.php:80
+#: includes/hosting-group.php:80
 msgid "Author"
 msgstr "Auteur"
 
-#: includes/hosting_group.php:81
+#: includes/hosting-group.php:81
 msgid "Comments"
 msgstr "Reacties"
 
-#: includes/hosting_group.php:82
+#: includes/hosting-group.php:82
 msgid "Date"
 msgstr "Datum"
 

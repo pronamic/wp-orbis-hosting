@@ -6,7 +6,7 @@ while ( $hosting_groups_query->have_posts() ) : $hosting_groups_query->the_post(
 
 	<div class="panel">
 		<header>
-			<h3><?php _e( 'Hosting Group', 'orbis_hosting' ); ?></h3>
+			<h3><?php esc_html_e( 'Hosting Group', 'orbis_hosting' ); ?></h3>
 		</header>
 
 		<div class="content">
@@ -14,4 +14,4 @@ while ( $hosting_groups_query->have_posts() ) : $hosting_groups_query->the_post(
 		</div>
 	</div>
  
- <?php endwhile; ?>
+	<?php endwhile; ?>

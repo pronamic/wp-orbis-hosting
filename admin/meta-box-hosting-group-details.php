@@ -13,7 +13,7 @@ wp_nonce_field( 'orbis_save_hosting_group_details', 'orbis_hosting_group_details
 	<tbody>
 		<tr>
 			<th scope="row">
-				<label for="orbis_hosting_group_ip_address"><?php _e( 'IP address', 'orbis_hosting' ); ?></label>
+				<label for="orbis_hosting_group_ip_address"><?php esc_html_e( 'IP address', 'orbis_hosting' ); ?></label>
 			</th>
 			<td>
 				<input id="orbis_hosting_group_ip_address" name="_orbis_hosting_group_ip_address" value="<?php echo esc_attr( $ip_address ); ?>" type="text" />
@@ -21,7 +21,7 @@ wp_nonce_field( 'orbis_save_hosting_group_details', 'orbis_hosting_group_details
 		</tr>
 		<tr>
 			<th scope="row">
-				<label for="orbis_hosting_group_hostname"><?php _e( 'Hostname', 'orbis_hosting' ); ?></label>
+				<label for="orbis_hosting_group_hostname"><?php esc_html_e( 'Hostname', 'orbis_hosting' ); ?></label>
 			</th>
 			<td>
 				<input id="orbis_hosting_group_hostname" name="_orbis_hosting_group_hostname" value="<?php echo esc_attr( $hostname ); ?>" type="text" />
@@ -29,7 +29,7 @@ wp_nonce_field( 'orbis_save_hosting_group_details', 'orbis_hosting_group_details
 		</tr>
 		<tr>
 			<th scope="row">
-				<label for="orbis_hosting_group_hostname_provider"><?php _e( 'Hostname Provider', 'orbis_hosting' ); ?></label>
+				<label for="orbis_hosting_group_hostname_provider"><?php esc_html_e( 'Hostname Provider', 'orbis_hosting' ); ?></label>
 			</th>
 			<td>
 				<input id="orbis_hosting_group_hostname_provider" name="_orbis_hosting_group_hostname_provider" value="<?php echo esc_attr( $hostname_provider ); ?>" type="text" />

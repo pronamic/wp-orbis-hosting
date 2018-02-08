@@ -2,7 +2,7 @@
 /*
 Plugin Name: Orbis Hosting
 Plugin URI: http://orbiswp.com/
-Description: 
+Description:
 
 Version: 0.1
 Requires at least: 3.5

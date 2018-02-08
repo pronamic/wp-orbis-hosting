@@ -11,14 +11,13 @@ function orbis_hosting_create_initial_post_types() {
 				'name'          => __( 'Hosting Groups', 'orbis_hosting' ),
 				'singular_name' => __( 'Hosting Group', 'orbis_hosting' ),
 				'add_new'       => _x( 'Add New', 'hosting_group', 'orbis_hosting' ),
-				'add_new_item'  => __( 'Add New Hosting Group', 'orbis_hosting' )
+				'add_new_item'  => __( 'Add New Hosting Group', 'orbis_hosting' ),
 			),
 			'public'        => true,
 			'menu_position' => 30,
-			// 'menu_icon'     => $orbis_hosting_plugin->plugin_url( 'admin/images/hosting_group.png' ),
 			'supports'      => array( 'title', 'editor', 'comments' ),
 			'has_archive'   => true,
-			'rewrite'       => array( 'slug' => _x( 'hosting-groups', 'slug', 'orbis_hosting' ) ) 
+			'rewrite'       => array( 'slug' => _x( 'hosting-groups', 'slug', 'orbis_hosting' ) ),
 		)
 	);
 
@@ -30,14 +29,14 @@ function orbis_hosting_create_initial_post_types() {
 				'name'          => __( 'Domain Names', 'orbis_hosting' ),
 				'singular_name' => __( 'Domain Name', 'orbis_hosting' ),
 				'add_new'       => _x( 'Add New', 'domain_name', 'orbis_hosting' ),
-				'add_new_item'  => __( 'Add New Domain Name', 'orbis_hosting' )
+				'add_new_item'  => __( 'Add New Domain Name', 'orbis_hosting' ),
 			),
 			'public'        => true,
 			'menu_position' => 30,
 			'menu_icon'     => $orbis_hosting_plugin->plugin_url( 'admin/images/domain_name.png' ),
 			'supports'      => array( 'title', 'comments' ),
 			'has_archive'   => true,
-			'rewrite'       => array( 'slug' => 'domeinnamen' )
+			'rewrite'       => array( 'slug' => 'domeinnamen' ),
 		)
 	);
 }
@@ -49,7 +48,7 @@ function orbis_hosting_p2p_init() {
 		'name'        => 'orbis_hosting_groups_to_domain_names',
 		'from'        => 'orbis_hosting_group',
 		'to'          => 'orbis_domain_name',
-		'cardinality' => 'one-to-many'
+		'cardinality' => 'one-to-many',
 	) );
 }
 
@@ -59,20 +58,20 @@ add_action( 'p2p_init', 'orbis_hosting_p2p_init' );
  * Hosting group content
 */
 function orbis_hosting_the_content( $content ) {
-	if ( get_post_type() == 'orbis_hosting_group' ) {
+	if ( get_post_type() === 'orbis_hosting_group' ) {
 		$id = get_the_ID();
 
 		$domain_names = get_posts( array(
 			'connected_type'  => 'orbis_hosting_groups_to_domain_names',
 			'connected_items' => get_queried_object(),
-			'nopaging'        => true
+			'nopaging'        => true,
 		) );
 
 		if ( ! empty( $domain_names ) ) {
 			$str  = '';
-			
+
 			$str .= '<ul>';
-			
+
 			foreach ( $domain_names as $domain_name ) {
 				$str .= '<li>';
 				$str .= sprintf(
@@ -82,9 +81,9 @@ function orbis_hosting_the_content( $content ) {
 				);
 				$str .= '</li>';
 			}
-			
+
 			$str .= '</ul>';
-			
+
 			$content .= $str;
 		}
 	}
